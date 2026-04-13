@@ -1,0 +1,19 @@
+seed: 42
+
+data:
+  data_root: WFLW/WFLW_images
+  train_list: WFLW/WFLW_annotations/list_98pt_rect_attr_train_test/list_98pt_rect_attr_train.txt
+  val_list: WFLW/WFLW_annotations/list_98pt_rect_attr_train_test/list_98pt_rect_attr_test.txt
+  image_size: 128
+  crop_scale: 1.25
+
+train:
+  batch_size: 64
+  epochs: 200
+  lr: 0.001
+  weight_decay: 0.0001
+  num_workers: 4
+  amp: true
+  save_dir: ./runs/train_200epochs
+
+device: cuda
