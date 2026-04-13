@@ -15,4 +15,5 @@ wandb/
 runs
 WFLW
 logs
+test_images
 *.slurm
